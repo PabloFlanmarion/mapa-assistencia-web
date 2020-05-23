@@ -1,0 +1,88 @@
+
+sistema
+	igreja
+	pastor_id
+	data_criacao
+	data_atualizacao
+
+usuario
+	id
+	nome
+	login
+	senha
+	data_criacao
+	data_atualizacao
+	status
+	
+pessoa
+	id
+	nome
+	tipo_pessoa_id
+	categoria_id
+	situacao_membro_id
+	genero char(3)
+	familia_id
+	data_nascimento
+	data_criacao
+	data_atualizacao
+	status
+	
+categoria ENUM(pequeno-crianca-intermediario-adolescente-jovem-adulto-idoso)
+	id
+	nome
+	data_criacao
+	data_atualizacao
+	status
+	
+situacao_membro ENUM(membro_nao_batizado-membro-visitante-visitante_frequente-novo_convertido)
+	id
+	nome
+	data_criacao
+	data_atualizacao
+	status
+	
+estado_civil ENUM(solteiro-amasiado-divorciado-casado-viúvo)
+	id
+	nome
+	
+genero ENUM(MAS-FEM)
+	id
+	nome
+	
+lista_funcao
+	id
+	pessoa_id
+	funcao_id
+	
+funcao ENUM(obreiro-diacono-ungido-pastor-quinzenal-secretaria I-secretariaGA-responsavel-)
+	id
+	nome
+	descricao
+	data_criacao
+	data_atualizacao
+	status
+	
+familia
+	id
+	nome
+	endereco
+	data_criacao
+	data_atualizacao
+	status
+	
+lista_contato
+	id
+	pessoa_id
+	tipo_contato
+	contato
+	data_criacao
+	data_atualizacao
+	status
+	
+tipo_contato ENUM(email-celular-telefone)
+	id
+	nome
+	
+
+	
+	
