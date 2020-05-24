@@ -19,7 +19,7 @@ pessoa
 	nome
 	tipo_pessoa_id
 	categoria_id
-	situacao_membro_id
+	situacao_pessoa_id
 	genero char(3)
 	familia_id
 	data_nascimento
@@ -34,7 +34,7 @@ categoria ENUM(pequeno-crianca-intermediario-adolescente-jovem-adulto-idoso)
 	data_atualizacao
 	status
 	
-situacao_membro ENUM(membro_nao_batizado-membro-visitante-visitante_frequente-novo_convertido)
+situacao_pessoa ENUM(membro_nao_batizado-membro-visitante-visitante_frequente-novo_convertido)
 	id
 	nome
 	data_criacao
@@ -65,7 +65,13 @@ funcao ENUM(obreiro-diacono-ungido-pastor-quinzenal-secretaria I-secretariaGA-re
 familia
 	id
 	nome
-	endereco
+	logradouro
+	numero
+	complemento
+	bairro
+	cep
+	cidade
+	uf
 	data_criacao
 	data_atualizacao
 	status
